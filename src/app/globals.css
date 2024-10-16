@@ -2,26 +2,84 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+body{
+  background-color:#02989862;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+.header{
+  margin-top: 3%;
+  background-color: rgba(255, 255, 255, 0.909);
+  height: 20vh;
+}
+.headerbuttons{
+  color: #006161;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  padding: 40px;
+  font-size: 40px;
+  font-weight: bold;
+  gap: 30px;
+  margin-right: 4%;
+}
+.footer{
+  background-color: #ffc5c0;
+  padding: 30px;
+  height: 6vh;
+  font-size: 70px;
+  text-align: right; 
+  position: sticky;
+  bottom: 0;
+}
+.description{
+  padding: 60px;
+  font-size: 50px;
+}
+.blogs{
+  font-weight: bolder;
+  font-size: 200px;
+  font-family:Impact;
+  margin-left: 36%;
+  color: black;
+  gap: 90px;
+}
+.heading2{
+  font-size: 100px;
+  font-weight: bold;
+}
+.heading3{
+  font-size: 60px;
+  color: blue;
+  font-weight: bold;
+}
+@media only screen and (max-width:370px){
+  .header{
+    height: 8vh;
+  }
+  .footer{
+    height: 20px;
+    font-size: 10px;
+    padding: 2px;
+  }
+  .headerbuttons{
+    padding: 0px;
+    font-size: 5px;
+    padding: 0px;
+    gap: 5px;
+  }
+  .blogs{
+    font-size: 15px;
+    margin-left: 115px;
+  }
+  .description{
+    padding: 5px;
+    font-size: 8px;
+  }
+  .heading2{
+    font-size: 20px;
+  }
+  .heading3{
+    font-size: 15px;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}

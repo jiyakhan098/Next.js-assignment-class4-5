@@ -1,0 +1,35 @@
+.parent{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+  }
+  .contentChild{
+    height: fit-content;
+    width: 100vh;
+    font-size: 200px;
+    font-weight: bold;
+    margin: 50px;
+    margin-left: 100px;
+    margin-bottom: 6.75%;
+    font-family: Arial;
+    gap: 15px;
+  }
+  .name{
+    color: blue;
+    text-shadow: 0 0 20px skyblue;
+    font-weight: 900;
+  }
+  
+  
+  @media only screen and (max-width:370px){
+   
+    .contentChild{
+      font-size: 10px;
+      margin-top:20px;
+      margin-left: 10px;
+      margin-bottom: 90%;
+      width: fit-content;
+    }
+
+   
+  }
